@@ -35,6 +35,15 @@ def test_remote_repo_failure_handling():
     assert "Failed to download model weights from remote repository" in res["error"]
 
 
+def test_remote_model_repositories_configured():
+    """Verify that confirmed Hugging Face model repository IDs are properly configured in config.yaml."""
+    import yaml
+    with open("configs/config.yaml", "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f)
+    assert cfg["tasks"]["sentiment"]["remote_model_repo"] == "Allwynn07/indicbert-tamil-sentiment"
+    assert cfg["tasks"]["news_authenticity"]["remote_model_repo"] == "Allwynn07/indicbert-tamil-news-authenticity"
+
+
 def test_predictor_empty_and_short_input():
     predictor = get_predictor("sentiment", "models/sentiment")
     

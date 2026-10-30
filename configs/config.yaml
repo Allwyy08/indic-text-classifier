@@ -41,7 +41,7 @@ tasks:
     data_dir: "data/sentiment"
     model_save_dir: "models/sentiment"
     output_dir: "outputs/sentiment"
-    remote_model_repo: ""  # Optional: Hugging Face repo ID (e.g. 'username/indicbert-tamil-sentiment') for cloud deployment
+    remote_model_repo: "Allwynn07/indicbert-tamil-sentiment"
 
   news_authenticity:
     name: "tamil_news_authenticity"
@@ -59,7 +59,7 @@ tasks:
     data_dir: "data/news_authenticity"
     model_save_dir: "models/news_authenticity"
     output_dir: "outputs/news_authenticity"
-    remote_model_repo: ""  # Optional: Hugging Face repo ID (e.g. 'username/indicbert-tamil-news-authenticity') for cloud deployment
+    remote_model_repo: "Allwynn07/indicbert-tamil-news-authenticity"
 
 huggingface:
   username: "YOUR_NEW_HF_USERNAME"
