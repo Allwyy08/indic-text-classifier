@@ -1,0 +1,54 @@
+{
+  "task_name": "news_authenticity",
+  "display_title": "Task B: Tamil News Authenticity Classification",
+  "pretrained_checkpoint": "ai4bharat/IndicBERTv2-MLM-only",
+  "architecture": "BertForSequenceClassification",
+  "num_labels": 2,
+  "classes": [
+    "Real News",
+    "Fake News"
+  ],
+  "hyperparameters": {
+    "learning_rate": 2e-05,
+    "num_train_epochs": 2,
+    "batch_size": 16,
+    "max_sequence_length": 128,
+    "weight_decay": 0.01,
+    "seed": 42
+  },
+  "sample_counts": {
+    "train": 1000,
+    "val": 300,
+    "test": 300
+  },
+  "training_stats": {
+    "train_loss": 0.2744379001004355,
+    "train_runtime_sec": 198.4811098575592,
+    "device": "CPU",
+    "timestamp": "2026-10-29 21:59:00 UTC"
+  },
+  "validation_metrics": {
+    "loss": 0.14916592836380005,
+    "accuracy": 0.94,
+    "macro_f1": 0.9399038461538461,
+    "weighted_f1": 0.939903846153846,
+    "macro_precision": 0.9428341384863124,
+    "macro_recall": 0.94,
+    "runtime": 5.3532,
+    "samples_per_second": 56.041,
+    "steps_per_second": 1.868,
+    "epoch": 2.0
+  },
+  "test_metrics": {
+    "loss": 0.14073830842971802,
+    "accuracy": 0.9533333333333334,
+    "macro_f1": 0.9532585470085471,
+    "weighted_f1": 0.953258547008547,
+    "macro_precision": 0.9562533548040795,
+    "macro_recall": 0.9533333333333334,
+    "runtime": 5.1102,
+    "samples_per_second": 58.706,
+    "steps_per_second": 1.957,
+    "epoch": 2.0
+  }
+}

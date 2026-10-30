@@ -1,0 +1,69 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data & models (avoid committing large binaries to git)
+# Raw datasets can be re-downloaded via prepare_data.py
+data/raw/
+data/processed/*.parquet
+data/processed/*.arrow
+models/saved/*
+!models/README.md
+!data/README.md
+!outputs/README.md
+
+# Large model checkpoint binaries (>100MB exceeds GitHub limits and 1GB LFS free quota)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.h5
+*.tflite
+
+# Environment variables & secrets
+.env
+.env.*
+*.token
+*.key
+*.pem
+.streamlit/secrets.toml
+
+# Logs & temporary files
+*.log
+scratch/
+tmp/
+temp/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

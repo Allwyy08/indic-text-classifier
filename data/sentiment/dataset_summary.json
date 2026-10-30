@@ -1,0 +1,21 @@
+{
+  "train_rows": 1200,
+  "val_rows": 793,
+  "test_rows": 793,
+  "total_rows": 2786,
+  "train_dist": {
+    "Neutral": 400,
+    "Positive": 400,
+    "Negative": 400
+  },
+  "val_dist": {
+    "Positive": 432,
+    "Neutral": 205,
+    "Negative": 156
+  },
+  "test_dist": {
+    "Positive": 432,
+    "Neutral": 205,
+    "Negative": 156
+  }
+}

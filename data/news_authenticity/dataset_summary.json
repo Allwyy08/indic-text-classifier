@@ -1,0 +1,18 @@
+{
+  "train_rows": 2400,
+  "val_rows": 517,
+  "test_rows": 518,
+  "total_rows": 3435,
+  "train_dist": {
+    "Fake News": 1200,
+    "Real News": 1200
+  },
+  "val_dist": {
+    "Fake News": 289,
+    "Real News": 228
+  },
+  "test_dist": {
+    "Fake News": 290,
+    "Real News": 228
+  }
+}

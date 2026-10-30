@@ -1,0 +1,602 @@
+{
+  "sentiment": [
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Positive)",
+      "input_text": "அப்படி ஒரு ரகசிய அடி குடுக்கணும். அடிக்கணும். ஆனா அடிச்சத...",
+      "expected": "Positive",
+      "predicted": "Negative",
+      "confidence_pct": 66.35,
+      "match": "MISMATCH (Expected: Positive)",
+      "latency_ms": 70.93,
+      "probabilities": {
+        "Negative": 66.35,
+        "Neutral": 19.52,
+        "Positive": 14.14
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Positive)",
+      "input_text": "முத்தரையர் சமுதாயத்தின் சார்பாக படம் 100 நாள் தாண்டி திரை...",
+      "expected": "Positive",
+      "predicted": "Positive",
+      "confidence_pct": 96.91,
+      "match": "MATCH",
+      "latency_ms": 20.56,
+      "probabilities": {
+        "Negative": 0.41,
+        "Neutral": 2.68,
+        "Positive": 96.91
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Positive)",
+      "input_text": "மிகவும் மலிவானது!!! மார்க்கெட்டிலேயே. மாடிஃபைடு ஸ்கொயர் வ...",
+      "expected": "Positive",
+      "predicted": "Negative",
+      "confidence_pct": 73.63,
+      "match": "MISMATCH (Expected: Positive)",
+      "latency_ms": 32.77,
+      "probabilities": {
+        "Negative": 73.63,
+        "Neutral": 9.06,
+        "Positive": 17.31
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Negative)",
+      "input_text": "ரயில் தாமதமாக வருவதால் அலுவலக நேரம் தவறுகிறது.",
+      "expected": "Negative",
+      "predicted": "Negative",
+      "confidence_pct": 85.97,
+      "match": "MATCH",
+      "latency_ms": 22.87,
+      "probabilities": {
+        "Negative": 85.97,
+        "Neutral": 6.2,
+        "Positive": 7.83
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Negative)",
+      "input_text": "விவசாயி தற்கொலை செய்துகொள்வது மிகவும் வேதனையான செய்தி.",
+      "expected": "Negative",
+      "predicted": "Negative",
+      "confidence_pct": 84.8,
+      "match": "MATCH",
+      "latency_ms": 21.19,
+      "probabilities": {
+        "Negative": 84.8,
+        "Neutral": 5.22,
+        "Positive": 9.98
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Negative)",
+      "input_text": "சமீபத்தில் காஸ்கோ ராக்கெட்டை வாங்கிய பல வாடிக்கையாளர்கள் ...",
+      "expected": "Negative",
+      "predicted": "Negative",
+      "confidence_pct": 80.54,
+      "match": "MATCH",
+      "latency_ms": 24.69,
+      "probabilities": {
+        "Negative": 80.54,
+        "Neutral": 10.84,
+        "Positive": 8.62
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Neutral)",
+      "input_text": "மஸ்க் வசமான ட்விட்டர் | வெறுப்புப் பேச்சு குறித்த கவலையில...",
+      "expected": "Neutral",
+      "predicted": "Neutral",
+      "confidence_pct": 96.08,
+      "match": "MATCH",
+      "latency_ms": 25.24,
+      "probabilities": {
+        "Negative": 1.68,
+        "Neutral": 96.08,
+        "Positive": 2.24
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Neutral)",
+      "input_text": "கிருமிநாசினித் திறனுடன் மக்கும் மாஸ்க்குகளை உருவாக்கிய இந...",
+      "expected": "Neutral",
+      "predicted": "Neutral",
+      "confidence_pct": 91.2,
+      "match": "MATCH",
+      "latency_ms": 23.58,
+      "probabilities": {
+        "Negative": 2.0,
+        "Neutral": 91.2,
+        "Positive": 6.8
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Held-out Test (Neutral)",
+      "input_text": "பேடிஎம் இந்தியாவா, சீனாவா? - ட்விட்டரில் எழுச்சி கண்ட இன்...",
+      "expected": "Neutral",
+      "predicted": "Neutral",
+      "confidence_pct": 95.02,
+      "match": "MATCH",
+      "latency_ms": 23.13,
+      "probabilities": {
+        "Negative": 2.91,
+        "Neutral": 95.02,
+        "Positive": 2.07
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "UI Sample (Positive)",
+      "input_text": "இந்த உணவகம் மிகவும் அருமையாக உள்ளது, உணவும் சேவையும் சிறப...",
+      "expected": "Positive",
+      "predicted": "Positive",
+      "confidence_pct": 96.1,
+      "match": "MATCH",
+      "latency_ms": 24.67,
+      "probabilities": {
+        "Negative": 0.92,
+        "Neutral": 2.98,
+        "Positive": 96.1
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "UI Sample (Negative)",
+      "input_text": "இந்த சேவை மிகவும் மோசமாக உள்ளது, எனக்கு மிகவும் ஏமாற்றமாக...",
+      "expected": "Negative",
+      "predicted": "Negative",
+      "confidence_pct": 91.95,
+      "match": "MATCH",
+      "latency_ms": 28.33,
+      "probabilities": {
+        "Negative": 91.95,
+        "Neutral": 2.26,
+        "Positive": 5.79
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "UI Sample (Neutral)",
+      "input_text": "நான் ஒரு ஆசிரியர்.",
+      "expected": "Neutral",
+      "predicted": "Neutral",
+      "confidence_pct": 80.51,
+      "match": "MATCH",
+      "latency_ms": 27.81,
+      "probabilities": {
+        "Negative": 12.01,
+        "Neutral": 80.51,
+        "Positive": 7.48
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Clearly Positive",
+      "input_text": "அருமையான சேவை மற்றும் சிறந்த தரம், மிக்க நன்றி!",
+      "expected": "Positive",
+      "predicted": "Positive",
+      "confidence_pct": 96.27,
+      "match": "MATCH",
+      "latency_ms": 22.18,
+      "probabilities": {
+        "Negative": 0.58,
+        "Neutral": 3.15,
+        "Positive": 96.27
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Clearly Negative",
+      "input_text": "மிகவும் மோசமான சேவை, பணமும் நேரமும் வீணாகிவிட்டது.",
+      "expected": "Negative",
+      "predicted": "Negative",
+      "confidence_pct": 93.41,
+      "match": "MATCH",
+      "latency_ms": 20.41,
+      "probabilities": {
+        "Negative": 93.41,
+        "Neutral": 2.07,
+        "Positive": 4.52
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Clearly Negative",
+      "input_text": "பயங்கரமான ஏமாற்றம், தரம் மிகவும் மட்டம்.",
+      "expected": "Negative",
+      "predicted": "Negative",
+      "confidence_pct": 95.78,
+      "match": "MATCH",
+      "latency_ms": 20.29,
+      "probabilities": {
+        "Negative": 95.78,
+        "Neutral": 1.09,
+        "Positive": 3.13
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Factual Announcement",
+      "input_text": "நாளை காலை ஒன்பது மணிக்கு தொடர் வண்டி புறப்படும் என்று அறி...",
+      "expected": "Neutral",
+      "predicted": "Neutral",
+      "confidence_pct": 44.81,
+      "match": "MATCH",
+      "latency_ms": 22.08,
+      "probabilities": {
+        "Negative": 12.99,
+        "Neutral": 44.81,
+        "Positive": 42.2
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Factual Weather Report",
+      "input_text": "தமிழகத்தில் இன்று பல இடங்களில் மிதமான மழை பெய்தது.",
+      "expected": "Neutral",
+      "predicted": "Neutral",
+      "confidence_pct": 43.15,
+      "match": "MATCH",
+      "latency_ms": 19.88,
+      "probabilities": {
+        "Negative": 29.24,
+        "Neutral": 43.15,
+        "Positive": 27.61
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Informal Tamil",
+      "input_text": "Super movie bro semma comedy scenes",
+      "expected": "Positive",
+      "predicted": "Positive",
+      "confidence_pct": 70.49,
+      "match": "MATCH",
+      "latency_ms": 20.19,
+      "probabilities": {
+        "Negative": 6.05,
+        "Neutral": 23.46,
+        "Positive": 70.49
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Informal Tamil",
+      "input_text": "Waste of time romba bore padam",
+      "expected": "Negative",
+      "predicted": "Negative",
+      "confidence_pct": 46.24,
+      "match": "MATCH",
+      "latency_ms": 20.51,
+      "probabilities": {
+        "Negative": 46.24,
+        "Neutral": 31.26,
+        "Positive": 22.5
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Empty String",
+      "input_text": "",
+      "expected": null,
+      "predicted": null,
+      "confidence_pct": 0.0,
+      "match": "CORRECT REJECTION",
+      "latency_ms": 0.0,
+      "probabilities": {},
+      "device": "N/A",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Whitespace Only",
+      "input_text": "   ",
+      "expected": null,
+      "predicted": null,
+      "confidence_pct": 0.0,
+      "match": "CORRECT REJECTION",
+      "latency_ms": 0.0,
+      "probabilities": {},
+      "device": "N/A",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "Sentiment",
+      "category": "Single Character (< min length)",
+      "input_text": "அ",
+      "expected": null,
+      "predicted": null,
+      "confidence_pct": 0.0,
+      "match": "CORRECT REJECTION",
+      "latency_ms": 0.0,
+      "probabilities": {},
+      "device": "N/A",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    }
+  ],
+  "news_authenticity": [
+    {
+      "task": "News Authenticity",
+      "category": "Held-out Test (Real News)",
+      "input_text": "சூப்பர் 12 ரவுண்ட் அப்: மட்டைக்கும் பந்துக்குமான சமநிலை ப...",
+      "expected": "Real News",
+      "predicted": "Real News",
+      "confidence_pct": 99.12,
+      "match": "MATCH",
+      "latency_ms": 61.98,
+      "probabilities": {
+        "Real News": 99.12,
+        "Fake News": 0.88
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Held-out Test (Real News)",
+      "input_text": "ராவணனை தவறாக காட்டுவதா? சர்ச்சையில் பிரபாசின் ராமாயணம் படம்",
+      "expected": "Real News",
+      "predicted": "Real News",
+      "confidence_pct": 98.87,
+      "match": "MATCH",
+      "latency_ms": 21.99,
+      "probabilities": {
+        "Real News": 98.87,
+        "Fake News": 1.13
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Held-out Test (Real News)",
+      "input_text": "IND vs ZIM 3rd ODI | வெற்றிக்காக இறுதி வரை போராடிய...",
+      "expected": "Real News",
+      "predicted": "Real News",
+      "confidence_pct": 99.06,
+      "match": "MATCH",
+      "latency_ms": 21.11,
+      "probabilities": {
+        "Real News": 99.06,
+        "Fake News": 0.94
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Held-out Test (Fake News)",
+      "input_text": "\"டென்சல் வாஷிங்டன்: டிரம்புடன் நாங்கள் ரஷ்யா மற்றும் ஓர்வ...",
+      "expected": "Fake News",
+      "predicted": "Fake News",
+      "confidence_pct": 99.61,
+      "match": "MATCH",
+      "latency_ms": 26.05,
+      "probabilities": {
+        "Real News": 0.39,
+        "Fake News": 99.61
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Held-out Test (Fake News)",
+      "input_text": "ூவர்ணத்தை அவமதித்தாரா பிரதமர் மோடி?",
+      "expected": "Fake News",
+      "predicted": "Fake News",
+      "confidence_pct": 64.14,
+      "match": "MATCH",
+      "latency_ms": 20.89,
+      "probabilities": {
+        "Real News": 35.86,
+        "Fake News": 64.14
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Held-out Test (Fake News)",
+      "input_text": "என்கிறார் ஜார்ஜ் எச்.டபிள்யூ. புஷ் ஒருமுறை கூறினார் \"அமெர...",
+      "expected": "Fake News",
+      "predicted": "Fake News",
+      "confidence_pct": 99.33,
+      "match": "MATCH",
+      "latency_ms": 27.97,
+      "probabilities": {
+        "Real News": 0.67,
+        "Fake News": 99.33
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "UI Sample (Real News)",
+      "input_text": "கர்ப்பப்பை புற்றுநோயை தடுக்கும் “செர்வாவாக்” தடுப்பூசி: இ...",
+      "expected": "Real News",
+      "predicted": "Real News",
+      "confidence_pct": 96.12,
+      "match": "MATCH",
+      "latency_ms": 27.28,
+      "probabilities": {
+        "Real News": 96.12,
+        "Fake News": 3.88
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "UI Sample (Fake News)",
+      "input_text": "\"3,000 க்கும் மேற்பட்ட கொரோனா வைரஸ் நோயாளிகளை வேண்டுமென்ற...",
+      "expected": "Fake News",
+      "predicted": "Fake News",
+      "confidence_pct": 99.63,
+      "match": "MATCH",
+      "latency_ms": 25.46,
+      "probabilities": {
+        "Real News": 0.37,
+        "Fake News": 99.63
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Verified Real News",
+      "input_text": "டைமண்ட் லீக் ஃபைனலில் பட்டத்தை வென்ற முதல் இந்தியர்: வரலா...",
+      "expected": "Real News",
+      "predicted": "Real News",
+      "confidence_pct": 98.99,
+      "match": "MATCH",
+      "latency_ms": 24.38,
+      "probabilities": {
+        "Real News": 98.99,
+        "Fake News": 1.01
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Verified Real News",
+      "input_text": "மழைக்கால முன்னெச்சரிக்கை நடவடிக்கைகளை தீவிரப்படுத்த அரசு ...",
+      "expected": "Real News",
+      "predicted": "Real News",
+      "confidence_pct": 59.13,
+      "match": "MATCH",
+      "latency_ms": 21.49,
+      "probabilities": {
+        "Real News": 59.13,
+        "Fake News": 40.87
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Documented Fake Claim",
+      "input_text": "9/11 இன் ஆண்டு விழாவில் இல்ஹான் ஓமர் பார்ட்டி கொண்டாடினார...",
+      "expected": "Fake News",
+      "predicted": "Fake News",
+      "confidence_pct": 99.11,
+      "match": "MATCH",
+      "latency_ms": 25.09,
+      "probabilities": {
+        "Real News": 0.89,
+        "Fake News": 99.11
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Documented Fake Claim",
+      "input_text": "மக்கள் ஒபாமாவால் இனி மீன்பிடிக்க செல்ல முடியாது என்று பரவ...",
+      "expected": "Fake News",
+      "predicted": "Fake News",
+      "confidence_pct": 97.7,
+      "match": "MATCH",
+      "latency_ms": 23.2,
+      "probabilities": {
+        "Real News": 2.3,
+        "Fake News": 97.7
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Unseen Headline",
+      "input_text": "சென்னையில் புதிய மெட்ரோ ரயில் பாதை திறப்பு விழா அடுத்த மா...",
+      "expected": null,
+      "predicted": "Real News",
+      "confidence_pct": 87.27,
+      "match": "N/A (Unseen Claim)",
+      "latency_ms": 21.77,
+      "probabilities": {
+        "Real News": 87.27,
+        "Fake News": 12.73
+      },
+      "device": "CPU",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Empty String",
+      "input_text": "",
+      "expected": null,
+      "predicted": null,
+      "confidence_pct": 0.0,
+      "match": "CORRECT REJECTION",
+      "latency_ms": 0.0,
+      "probabilities": {},
+      "device": "N/A",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    },
+    {
+      "task": "News Authenticity",
+      "category": "Whitespace Only",
+      "input_text": "   ",
+      "expected": null,
+      "predicted": null,
+      "confidence_pct": 0.0,
+      "match": "CORRECT REJECTION",
+      "latency_ms": 0.0,
+      "probabilities": {},
+      "device": "N/A",
+      "model_checkpoint": "ai4bharat/IndicBERTv2-MLM-only"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "task_name": "sentiment",
+  "display_title": "Task A: Tamil Sentiment Analysis",
+  "pretrained_checkpoint": "ai4bharat/IndicBERTv2-MLM-only",
+  "architecture": "BertForSequenceClassification",
+  "num_labels": 3,
+  "classes": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "hyperparameters": {
+    "learning_rate": 2e-05,
+    "num_train_epochs": 2,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_size": 8,
+    "max_sequence_length": 64,
+    "weight_decay": 0.01,
+    "seed": 42
+  },
+  "sample_counts": {
+    "train": 1200,
+    "val": 793,
+    "test": 793
+  },
+  "training_stats": {
+    "train_loss": 0.6699012645085652,
+    "train_runtime_sec": 388.08749771118164,
+    "device": "CPU",
+    "timestamp": "2026-10-29 23:28:52 UTC"
+  },
+  "validation_metrics": {
+    "loss": 0.5812147855758667,
+    "accuracy": 0.7503152585119798,
+    "macro_f1": 0.7314197366510142,
+    "weighted_f1": 0.7577251231472363,
+    "macro_precision": 0.7210931638642482,
+    "macro_recall": 0.7642345910638594,
+    "runtime": 21.6688,
+    "samples_per_second": 36.596,
+    "steps_per_second": 2.307,
+    "epoch": 2.0
+  },
+  "test_metrics": {
+    "loss": 0.5973635911941528,
+    "accuracy": 0.7351828499369483,
+    "macro_f1": 0.7094590866838013,
+    "weighted_f1": 0.743465143585998,
+    "macro_precision": 0.7006377813336216,
+    "macro_recall": 0.7332904824774743,
+    "runtime": 20.9549,
+    "samples_per_second": 37.843,
+    "steps_per_second": 2.386,
+    "epoch": 2.0
+  }
+}

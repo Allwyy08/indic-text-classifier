@@ -1,0 +1,67 @@
+# IndicBERT Tamil Text Classifier Configuration
+
+project:
+  title: "Low-Resource Indic Text Classifier Using IndicBERT: Transfer Learning and Hugging Face Deployment"
+  seed: 42
+  device: "auto"  # "auto", "cuda", or "cpu"
+
+model:
+  pretrained_model_name: "ai4bharat/IndicBERTv2-MLM-only"
+  max_length: 64
+  use_fast_tokenizer: true
+
+training:
+  learning_rate: 2.0e-5
+  num_train_epochs: 2
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 2
+  per_device_eval_batch_size: 16
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  logging_steps: 20
+  save_total_limit: 1
+
+tasks:
+  sentiment:
+    name: "tamil_sentiment"
+    display_title: "Task A: Tamil Sentiment Analysis"
+    num_labels: 3
+    classes:
+      - "Negative"
+      - "Neutral"
+      - "Positive"
+    id2label:
+      0: "Negative"
+      1: "Neutral"
+      2: "Positive"
+    label2id:
+      "Negative": 0
+      "Neutral": 1
+      "Positive": 2
+    data_dir: "data/sentiment"
+    model_save_dir: "models/sentiment"
+    output_dir: "outputs/sentiment"
+    remote_model_repo: ""  # Optional: Hugging Face repo ID (e.g. 'username/indicbert-tamil-sentiment') for cloud deployment
+
+  news_authenticity:
+    name: "tamil_news_authenticity"
+    display_title: "Task B: Tamil News Authenticity Classification"
+    num_labels: 2
+    classes:
+      - "Real News"
+      - "Fake News"
+    id2label:
+      0: "Real News"
+      1: "Fake News"
+    label2id:
+      "Real News": 0
+      "Fake News": 1
+    data_dir: "data/news_authenticity"
+    model_save_dir: "models/news_authenticity"
+    output_dir: "outputs/news_authenticity"
+    remote_model_repo: ""  # Optional: Hugging Face repo ID (e.g. 'username/indicbert-tamil-news-authenticity') for cloud deployment
+
+huggingface:
+  username: "YOUR_NEW_HF_USERNAME"
+  space_name: "indicbert-tamil-classifier"
+  space_url: "https://huggingface.co/spaces/YOUR_NEW_HF_USERNAME/indicbert-tamil-classifier"

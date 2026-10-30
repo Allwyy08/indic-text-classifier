@@ -1,0 +1,10 @@
+{
+  "id2label": {
+    "0": "Real News",
+    "1": "Fake News"
+  },
+  "label2id": {
+    "Real News": 0,
+    "Fake News": 1
+  }
+}
